@@ -836,6 +836,104 @@ a:focus {
     background-color: #fff;
 }
 
+/*
+    Component: page
+    ---
+    Page component for mobile nav transition
+*/
+
+.c-page {
+    position: relative;
+    transition: transform 5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
+}
+
+.has-mobile-nav .c-page {
+    /* option 1 scale */
+    /* transform: scale(.98); */
+
+    /* option 2 push left */
+    /* transform: translateX(100%); */
+
+    /* option 3 slide left */
+    transform: translateX(25%);
+}
+
+@media (min-width: 992px) {
+    /* Reset the transform on larger viewports */
+    .c-page {
+        transform: none !important;
+    }
+}
+
+/*
+    Component: mobile nav
+    ---
+    Dedicated mobile nav component
+*/
+
+.c-mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.has-mobile-nav .c-mobile-nav {
+    pointer-events: auto;
+}
+
+.c-mobile-nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.c-mobile-nav__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #202024;
+    opacity: 0;
+    transition: opacity 5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
+}
+
+.has-mobile-nav .c-mobile-nav__bg {
+    opacity: .5;
+}
+
+.c-mobile-nav__body {
+    position: relative;
+    padding: 24px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
+}
+
+.has-mobile-nav .c-mobile-nav__body {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    .c-mobile-nav__body {
+        padding: 48px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Hide the mobile nav on larger viewports even whent it's open on smaller screens */
+    .c-mobile-nav {
+        display: none !important;
+    }
+}
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
