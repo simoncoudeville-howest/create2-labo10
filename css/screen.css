@@ -848,7 +848,7 @@ a:focus {
 
 .c-page {
     position: relative;
-    transition: transform 5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
+    transition: transform .5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
 }
 
 .has-mobile-nav .c-page {
@@ -903,7 +903,7 @@ a:focus {
     left: 0;
     background-color: #202024;
     opacity: 0;
-    transition: opacity 5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
+    transition: opacity .5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
 }
 
 .has-mobile-nav .c-mobile-nav__bg {
@@ -917,7 +917,7 @@ a:focus {
     width: 100vw;
     background-color: #fff;
     transform: translateX(-100%);
-    transition: transform 5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
+    transition: transform .5s cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
 }
 
 .has-mobile-nav .c-mobile-nav__body {
