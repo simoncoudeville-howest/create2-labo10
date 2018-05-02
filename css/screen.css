@@ -43,6 +43,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.has-mobile-nav {
+    overflow-y: hidden;
+}
+
 *,
 *:before,
 *:after {
