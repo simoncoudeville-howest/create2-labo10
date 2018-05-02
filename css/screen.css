@@ -41,10 +41,11 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 .has-mobile-nav {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 *,
