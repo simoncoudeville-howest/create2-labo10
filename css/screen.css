@@ -206,9 +206,10 @@ a:focus {
 */
 
 .o-row {
-    overflow: auto;
     position: relative;
     padding: 24px 24px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* color modifiers */
@@ -260,6 +261,7 @@ a:focus {
 .o-container {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
     max-width: 56.4em; /* 56.4 * 20px = 1128px */
 }
 
@@ -270,23 +272,24 @@ a:focus {
 */
 
 .o-section {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .o-section + .o-section {
-    padding-top: 24px;
+    margin-top: 24px;
 }
 
 @media (min-width: 768px) {
     .o-section--lg + .o-section--lg,
     .o-section--xl + .o-section--xl {
-        padding-top: 48px;
+        margin-top: 48px;
     }
 }
 
 @media (min-width: 1200px) {
     .o-section--xl + .o-section--xl {
-        padding-top: 72px;
+        margin-top: 72px;
     }
 }
 
@@ -627,6 +630,7 @@ a:focus {
     color: #6C6C75;
 }
 
+.is-selected .c-nav__link,
 .c-nav__link:hover,
 .c-nav__link:focus {
     color: #5051db;
