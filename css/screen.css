@@ -860,7 +860,7 @@ a:focus {
 .c-page {
     position: relative;
     will-change: transform;
-    transition: transform .25s ease
+    transition: transform .25s ease;
 }
 
 .has-mobile-nav .c-page {
@@ -916,7 +916,7 @@ a:focus {
     background-color: #202024;
     will-change: opacity;
     opacity: 0;
-    transition: opacity .25s ease
+    transition: opacity .25s ease;
 }
 
 .has-mobile-nav .c-mobile-nav__bg {
@@ -931,7 +931,7 @@ a:focus {
     background-color: #fff;
     will-change: transform;
     transform: translateX(-100%);
-    transition: transform .25s ease
+    transition: transform .25s ease;
 }
 
 .has-mobile-nav .c-mobile-nav__body {
