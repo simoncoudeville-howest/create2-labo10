@@ -272,11 +272,7 @@ a:focus {
 */
 
 .o-section {
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -306,8 +302,6 @@ a:focus {
 */
 
 .o-layout {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 }
@@ -603,6 +597,7 @@ a:focus {
     margin-bottom: 24px;
     width: 24px;
     height: 24px;
+    outline: none;
 }
 
 .c-nav-trigger__svg {
@@ -936,12 +931,11 @@ a:focus {
     background-color: #fff;
     will-change: transform;
     transform: translateX(-100%);
-    transition: transform .2s ease-in
+    transition: transform .25s ease
 }
 
 .has-mobile-nav .c-mobile-nav__body {
     transform: translateX(0);
-    transition: transform .25s ease-out
 }
 
 @media (min-width: 768px) {
