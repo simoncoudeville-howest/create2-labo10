@@ -272,9 +272,7 @@ a:focus {
 */
 
 .o-section {
-    /* display: flex;
-    flex-direction: column; */
-    display: flow-root; /* New solution? */
+    display: flow-root; /* New solution! Fixes margin collapsing */
 }
 
 .o-section + .o-section {
