@@ -68,12 +68,6 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-    background: #5051DB;
-    color: white;
-    text-shadow: none;
-}
-
 ::selection {
     background: #5051DB;
     color: white;
@@ -208,7 +202,7 @@ a:focus {
 .o-row {
     position: relative;
     padding: 24px 24px 0;
-    display: flow-root;
+    display: flow-root; /* New solution! Fixes margin collapsing */
 }
 
 /* color modifiers */
